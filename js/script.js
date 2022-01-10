@@ -16,6 +16,9 @@ console.log('JS OK');
 3- Stampare in console i tiri di dado e il risultato. */
 
 //! ESERCIZIO MAIL
+// Prendo gli id dall html
+const uEmail = document.getElementById("uEmail");
+const enabledEmail = document.getElementById("enabledEmail");
 
 // Creo array con mail
 const mail = ['gianni@gmail.com', 'piero@gmail.com', 'giorgio@gmail.com', 'mario@gmail.com', 'luigi@gmail.com'];
@@ -25,14 +28,24 @@ console.table(mail);
 const userEmail = window.prompt('Verifica la tua mail', '@gmail.com').trim().toLowerCase();
 console.log(userEmail);
 
+//* Stampo in pagina la mail
+uEmail.innerText = userEmail;
+
 // Controllo che la mail sia presente nell array
 // Se nell array di mail è presente la mail inserita dall'utente
+
+let authResult = ''; 
+
 if (mail.includes(userEmail)) {
-  console.log('Mail Presente');
+  console.log("Mail autorizzata all'accesso");
+  authResult = "Mail autorizzata all'accesso";
 } else {
-  console.log('Mail Assente');
+  console.log('Mail non autorizzata');
+  authResult = "Mail non autorizzata";
 }
 
+// Stampo in pagina se la mail ha l'autorizzazione
+enabledEmail.innerText = authResult;
 
 //! ESERCIZIO DADI
 
