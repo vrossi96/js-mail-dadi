@@ -15,16 +15,24 @@
    <!-- Mail -->
    <div class="container">
       <div class="row text-center">
-         <div class="col-12">
-            <h1>Mail</h1>
-            <h3>Email inserita: <span id="uEmail" class="text-uppercase"></span></h3>
-            <h4 id="enabledEmail" class="text-uppercase"></h4>
+         <div class="col-12 row">
+            <h1 class="col-12">Mail</h1>
+            <h3 class="col-12">Email inserita: <span id="uEmail" class="text-uppercase"></span></h3>
+            <h4 id="enabledEmail" class="col-12 text-uppercase"></h4>
          </div>
       </div>
       <!-- Dadi -->
       <div class="row text-center">
-         <h1>Dadi</h1>
-
+         <div class="col-12 row">
+            <h1 class="col-12">Dadi</h1>
+            <div class="col-6">
+               <h3>Il tuo numero è: <span id="urNumber"></span></h3>
+            </div>
+            <div class="col-6">
+               <h3>Il numero avversario è: <span id="hisNumber"></span></h3>
+            </div>
+            <h2 id="diceResult" class="col-12 text-uppercase"></h2>
+         </div>
       </div>
    </div>
    <script src="js/script.js"></script>

@@ -25,7 +25,7 @@ const mail = ['gianni@gmail.com', 'piero@gmail.com', 'giorgio@gmail.com', 'mario
 console.table(mail);
 
 // Chiedo la mail all'utente
-const userEmail = window.prompt('Verifica la tua mail', '@gmail.com').trim().toLowerCase();
+const userEmail = window.prompt('Verifica la tua mail (solo Gmail sono valide)', '@gmail.com').trim().toLowerCase();
 console.log(userEmail);
 
 //* Stampo in pagina la mail
@@ -48,6 +48,10 @@ if (mail.includes(userEmail)) {
 enabledEmail.innerText = authResult;
 
 //! ESERCIZIO DADI
+// Prendo gli id dall html
+const urNumber = document.getElementById("urNumber");
+const hisNumber = document.getElementById("hisNumber");
+const diceResult = document.getElementById("diceResult");
 
 //* Math.floor riporta un numero intero
 //* Math.random riporta un numero random
@@ -55,14 +59,25 @@ enabledEmail.innerText = authResult;
 //Viene scelto un numero tra 0 a 6
 const userNumber = Math.floor(Math.random() * 6) + 1;
 console.log('userNumber: ', userNumber);
+// Il numero viene mostrato in pagina
+urNumber.innerText = userNumber;
 
 const pcNumber = Math.floor(Math.random() * 6) + 1;
 console.log('pcNumber: ', pcNumber);
+// Il numero viene mostrato in pagina
+hisNumber.innerText = pcNumber;
 
+let winner;
 if (userNumber == pcNumber) {
   console.log('Pareggio')
+  winner = "Pareggio"
 } else if (userNumber > pcNumber) {
   console.log('Vittoria!')
+  winner = "Vittoria"
 } else {
   console.log('Hai perso!')
+  winner = "Hai perso"
 }
+
+// Il risultato dei dadi viene mostrato in pagina
+diceResult.innerText = winner;
