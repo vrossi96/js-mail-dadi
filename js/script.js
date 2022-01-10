@@ -14,3 +14,9 @@ console.log('JS OK');
 1b- sia per il giocatore sia per il computer.
 2- Stabilire il vincitore, in base a chi fa il punteggio più alto.
 3- Stampare in console i tiri di dado e il risultato. */
+
+// ESERCIZIO MAIL
+
+const mail = ['gianni@gmail.com', 'piero@gmail.com', 'giorgio@gmail.com', 'mario@gmail.com', 'luigi@gmail.com'];
+
+console.table(mail);
