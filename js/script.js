@@ -18,5 +18,7 @@ console.log('JS OK');
 // ESERCIZIO MAIL
 
 const mail = ['gianni@gmail.com', 'piero@gmail.com', 'giorgio@gmail.com', 'mario@gmail.com', 'luigi@gmail.com'];
-
 console.table(mail);
+
+const userEmail = window.prompt('Verifica la tua mail', '@gmail.com');
+console.log(userEmail);
