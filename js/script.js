@@ -15,7 +15,7 @@ console.log('JS OK');
 2- Stabilire il vincitore, in base a chi fa il punteggio più alto.
 3- Stampare in console i tiri di dado e il risultato. */
 
-// ESERCIZIO MAIL
+//! ESERCIZIO MAIL
 
 // Creo array con mail
 const mail = ['gianni@gmail.com', 'piero@gmail.com', 'giorgio@gmail.com', 'mario@gmail.com', 'luigi@gmail.com'];
@@ -33,3 +33,15 @@ for (let i = 0; i < mail.length; i++) {
   else
   console.log('Mail assente');
 }
+
+//! ESERCIZIO DADI
+
+//* Math.floor riporta un numero intero
+//* Math.random riporta un numero random
+
+//Viene scelto un numero tra 0 a 6
+const userNumber = Math.floor(Math.random() * 7);
+console.log('userNumber: ', userNumber);
+
+const pcNumber = Math.floor(Math.random() * 7);
+console.log('pcNumber: ', pcNumber);
