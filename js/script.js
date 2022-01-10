@@ -25,3 +25,11 @@ console.table(mail);
 const userEmail = window.prompt('Verifica la tua mail', '@gmail.com').trim().toLowerCase();
 console.log(userEmail);
 
+// Controllo che la mail sia presente nell array
+for (let i = 0; i < mail.length; i++) {
+  // Se nell array di mail è presente la mail inserita dall'utente
+  if (mail.includes(userEmail))
+  console.log('Mail OK');
+  else
+  console.log('Mail assente');
+}
