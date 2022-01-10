@@ -37,10 +37,8 @@ uEmail.innerText = userEmail;
 let authResult = ''; 
 
 if (mail.includes(userEmail)) {
-  console.log("Mail autorizzata all'accesso");
   authResult = "Mail autorizzata all'accesso";
 } else {
-  console.log('Mail non autorizzata');
   authResult = "Mail non autorizzata";
 }
 
@@ -69,13 +67,10 @@ hisNumber.innerText = pcNumber;
 
 let winner;
 if (userNumber == pcNumber) {
-  console.log('Pareggio')
   winner = "Pareggio"
 } else if (userNumber > pcNumber) {
-  console.log('Vittoria!')
   winner = "Vittoria"
 } else {
-  console.log('Hai perso!')
   winner = "Hai perso"
 }
 

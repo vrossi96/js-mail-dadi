@@ -1,0 +1,16 @@
+body {
+  background-color: #3e78b2;
+}
+
+.row > * {
+  color: #3e78b2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  background-color: #4a525a;
+  border-radius: 25px;
+  border: 2px solid #24272b;
+}
