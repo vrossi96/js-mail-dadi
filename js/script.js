@@ -40,10 +40,10 @@ if (mail.includes(userEmail)) {
 //* Math.random riporta un numero random
 
 //Viene scelto un numero tra 0 a 6
-const userNumber = Math.floor(Math.random() * 7);
+const userNumber = Math.floor(Math.random() * 6) + 1;
 console.log('userNumber: ', userNumber);
 
-const pcNumber = Math.floor(Math.random() * 7);
+const pcNumber = Math.floor(Math.random() * 6) + 1;
 console.log('pcNumber: ', pcNumber);
 
 if (userNumber == pcNumber) {
