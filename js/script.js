@@ -45,3 +45,11 @@ console.log('userNumber: ', userNumber);
 
 const pcNumber = Math.floor(Math.random() * 7);
 console.log('pcNumber: ', pcNumber);
+
+if (userNumber == pcNumber) {
+  console.log('Pareggio')
+} else if (userNumber > pcNumber) {
+  console.log('Vittoria!')
+} else {
+  console.log('Hai perso!')
+}
